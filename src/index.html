@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="¡Bienvenidos a mi Portafolio! Ingresá para conocer sobre mí, sobre las tecnologías que manejo y sobre los proyectos realizados hasta el momento.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&display=swap">
+  <title>Fede Baleyrón - Frontend Developer</title>
+</head>
+<body>
+  <header class='header-container max-w'>
+    <nav class='nav-header-container'>
+      <ul class='nav-header-items-wrapper'>
+        <li class='nav-item'>
+          <a class='nav-item-link nav-item-home nav-item-focus' href='#inicio'>INICIO</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-item-link nav-item-about' href='#sobre-mi'>SOBRE MÍ</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-item-link nav-item-technologies' href='#tecnologias'>TECNOLOGÍAS</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-item-link nav-item-projects' href='#proyectos'>PROYECTOS</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class='max-w'>
+    <section class='section-container profile-section-container' id='inicio' data-navid='$home_item'>
+      <article class='profile-card'>
+        <div class='profile-img'></div>
+      </article>
+      <article class='profile-info'>
+        <section>
+          <h1 class='profile-name'>
+            ¡Hola! Soy Federico
+          </h1>
+          <p class='profile-role'>
+            DESARROLLADOR FRONTEND
+          </p>
+        </section>
+        <section class="contact-container">
+          <div class="contact-icons-container">
+            <a class="icon-wrapper linkedin--wrapper" href="https://www.linkedin.com/in/fede-baleyron/" target='_blank' rel="noopener noreferrer">
+              <div class="contact-icons linkedin--icon"></div>
+            </a>
+            <a class="icon-wrapper github--wrapper" href="https://github.com/Fede-Baleyron" target='_blank' rel="noopener noreferrer">
+              <div class="contact-icons github--icon"></div>
+            </a>
+            <a class="icon-wrapper whatsapp--wrapper" href="https://api.whatsapp.com/send?phone=541170725646" target='_blank' rel="noopener noreferrer">
+              <div class="contact-icons whatsapp--icon"></div>
+            </a>
+          </div>
+        </section>
+      </article>
+    </section>
+    <section class='section-container' id='sobre-mi' data-navid='$about_item'>
+      <h2 class='section-title'>SOBRE MÍ</h2>
+      <p class='section-content about-me-content'>
+        Vivo en la ciudad de Buenos Aires, Argentina. Hace un año empecé mi camino en el mundo IT de manera completamente autodidacta, aprendiendo en el camino diferentes tecnologías, que luego apliqué en proyectos personales y en equipo.
+      </p>
+      <p class='section-content about-me-content'>
+        Actualmente me encuentro en una organización liderada por Jorge Emiliano Maldonado, de nombre
+        <a href='https://gesprender.com/' target='_blank' rel='noopener noreferrer' class='highlight-content'>GesPrender</a>,
+        en la cual estamos desarrollando, principalmente, la idea de un sistema de gestión de negocios. Además, también realizamos proyectos para clientes reales cuando éstos nos contactan.
+      </p>
+    </section>
+    <section class='section-container technologies-section-container' id='tecnologias' data-navid='$techs_item'>
+      <h2 class='section-title'>TECNOLOGÍAS</h2>
+      <article class='technologies-icons-container'>
+        <div class='technology-icon-wrapper html-icon-wrapper'>
+          <span class='technology-name'>HTML</span>
+          <div class='technology html'></div>
+        </div>
+        <div class='technology-icon-wrapper css-icon-wrapper'>
+          <span class='technology-name'>CSS</span>
+          <div class='technology css'></div>
+        </div>
+        <div class='technology-icon-wrapper tailwindcss-icon-wrapper'>
+          <span class='technology-name'>TailwindCSS</span>
+          <div class='technology tailwindcss'></div>
+        </div>
+        <div class='technology-icon-wrapper js-icon-wrapper'>
+          <span class='technology-name'>Javascript</span>
+          <div class='technology js'></div>
+        </div>
+        <div class='technology-icon-wrapper react-icon-wrapper'>
+          <span class='technology-name'>React</span>
+          <div class='technology react'></div>
+        </div>
+        <div class='technology-icon-wrapper redux-icon-wrapper'>
+          <span class='technology-name'>Redux Toolkit</span>
+          <div class='technology redux'></div>
+        </div>
+        <div class='technology-icon-wrapper nextjs-icon-wrapper'>
+          <span class='technology-name'>Next.js</span>
+          <div class='technology nextjs'></div>
+        </div>
+        <div class='technology-icon-wrapper git-icon-wrapper'>
+          <span class='technology-name'>Git</span>
+          <div class='technology git'></div>
+        </div>
+      </article>
+    </section>
+
+    <section class='section-container projects-section-container' id='proyectos' data-navid='$projects_item'>
+      <h2 class='section-title'>PROYECTOS</h2>
+      <article class='projects-wrapper'>
+        <section class='project'>
+          <section class='project-top project-img-container'>
+            <div class='project-img disa-img'></div>
+          </section>
+          <div class='project-bottom'>
+            <section class='project-type-wrapper'>
+              <span class='project-type-icon'>
+                <div class='freelance-icon'></div>
+                <!-- <svg width="24px" height="24px" viewBox="0 0 48 48" version="1.1">
+                  <g id="🔍-System-Icons" stroke="none" stroke-width="1" fill-rule="evenodd">
+                    <g id="ic_fluent_person_48_filled" fill="hsla(25, 50%, 95%, .80)" fill-rule="nonzero">
+                      <path d="M35.7502,28 C38.0276853,28 39.8876578,29.7909151 39.9950978,32.0427546 L40,32.2487 L40,33 C40,36.7555 38.0583,39.5669 35.0798,41.3802 C32.1509,43.1633 28.2139,44 24,44 C19.7861,44 15.8491,43.1633 12.9202,41.3802 C10.0319285,39.6218485 8.11862909,36.9249713 8.00532378,33.3388068 L8,33 L8,32.2489 C8,29.9703471 9.79294995,28.1122272 12.0440313,28.0048972 L12.2499,28 L35.7502,28 Z M24,4 C29.5228,4 34,8.47715 34,14 C34,19.5228 29.5228,24 24,24 C18.4772,24 14,19.5228 14,14 C14,8.47715 18.4772,4 24,4 Z" id="🎨-Color"></path>
+                    </g>
+                  </g>
+                </svg> -->
+              </span>
+              <span class='project-type-title'>FREELANCE</span>
+            </section>
+            <section class='project-techs-used-container'>
+              <div class='icons html'></div>
+              <div class='icons css-icon'></div>
+              <div class='icons js'></div>
+              <div class='icons git-icon'></div>
+            </section>
+            <hr class='line' />
+            <section class='project-links-container'>
+              <h2 class='project-title'>DISA DENTAL</h2>
+              <a class='project-link' href='https://disa-dental.netlify.app' target="_blank" rel="noopener noreferrer">
+                <div class='icons web-icon-light'></div>
+                <span>SITIO WEB</span>
+                <div class='icons arrow-icon-light'></div>
+              </a>
+              <!-- <a class='project-link' href='' target="_blank" rel="noopener noreferrer">
+                <div class='icons github-icon-light'></div>
+                <span>REPOSITORIO</span>
+                <div class='icons arrow-icon-light'></div>
+              </a> -->
+            </section>
+          </div>
+        </section>
+        <section class='project'>
+          <section class='project-top project-img-container'>
+            <div class='project-img fundation-gabriel-img'></div>
+          </section>
+          <div class='project-bottom'>
+            <section class='project-type-wrapper'>
+              <span class='project-type-icon'>
+                <div class='gesprender-icon'></div>
+                <!-- <svg width="24px" height="24px" viewBox="0 0 48 48" version="1.1">
+                  <g id="🔍-System-Icons" stroke="none" stroke-width="1" fill-rule="evenodd">
+                    <g id="ic_fluent_person_48_filled" fill="hsla(25, 50%, 95%, .80)" fill-rule="nonzero">
+                      <path d="M35.7502,28 C38.0276853,28 39.8876578,29.7909151 39.9950978,32.0427546 L40,32.2487 L40,33 C40,36.7555 38.0583,39.5669 35.0798,41.3802 C32.1509,43.1633 28.2139,44 24,44 C19.7861,44 15.8491,43.1633 12.9202,41.3802 C10.0319285,39.6218485 8.11862909,36.9249713 8.00532378,33.3388068 L8,33 L8,32.2489 C8,29.9703471 9.79294995,28.1122272 12.0440313,28.0048972 L12.2499,28 L35.7502,28 Z M24,4 C29.5228,4 34,8.47715 34,14 C34,19.5228 29.5228,24 24,24 C18.4772,24 14,19.5228 14,14 C14,8.47715 18.4772,4 24,4 Z" id="🎨-Color"></path>
+                    </g>
+                  </g>
+                </svg> -->
+              </span>
+              <span class='project-type-title'>GESPRENDER</span>
+            </section>
+            <section class='project-techs-used-container'>
+              <div class='icons react'></div>
+              <div class='icons css-icon'></div>
+              <div class='icons git-icon'></div>
+            </section>
+            <hr class='line' />
+            <section class='project-links-container'>
+              <h2 class='project-title gabriel-carron-title'>FUNDACIÓN GABRIEL CARRÓN</h2>
+              <a class='project-link' href='https://fundaciongabrielcarron.org/' target="_blank" rel="noopener noreferrer">
+                <div class='icons web-icon-light'></div>
+                <span>SITIO WEB</span>
+                <div class='icons arrow-icon-light'></div>
+              </a>
+              <!-- <a class='project-link' href='' target="_blank" rel="noopener noreferrer">
+                <div class='icons github-icon-light'></div>
+                <span>REPOSITORIO</span>
+                <div class='icons arrow-icon-light'></div>
+              </a> -->
+            </section>
+          </div>
+        </section>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
