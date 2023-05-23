@@ -1,4 +1,4 @@
-import './index.css'
+import './styles.scss'
 const $home_section = document.querySelector('#inicio')
 const $about_section = document.querySelector('#sobre-mi')
 const $techs_section = document.querySelector('#tecnologias')

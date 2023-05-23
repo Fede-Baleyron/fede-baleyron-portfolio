@@ -1,46 +1,9 @@
-:root {
-  --primary-blue: hsl(216, 84%, 47%);
-  --neutral-light: hsl(25, 50%, 95%);
-  --neutral-dark: hsl(45, 8%, 10%);
-	--neutral-dark-secondary: hsla(45, 8%, 10%, .85);
-  --dark--primary-shadow: hsla(45, 8%, 10%, .50);
-  --dark--primary-layer: hsla(45, 8%, 10%, .70);
-}
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Forum';
-  box-sizing: border-box;
-}
-html {
-	scroll-behavior: smooth;
-}
-body {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  background: var(--neutral-light);
-}
-main {
-	display: flex;
-	flex-flow: column;
-	gap: 10rem;
-	width: 100%;
-	height: max-content;
-}
-button {
-	background: none;
-  border: none;
-}
-li {
-	list-style: none;
-}
-a {
-	color: inherit;
-  text-decoration: none;
-}
+@import './scss/modules/base';
+@import './scss/modules/utility';
+@import './scss/modules/icons';
+@import './scss/modules/high-specificity';
+@import './scss/modules/animations';
+
 .section-title-wrapper {
 	display: flex;
 	flex-flow: column;
@@ -75,9 +38,6 @@ a {
 	color: var(--primary-blue);
 	font-weight: bold;
 }
-.max-w {
-  max-width: 1260px;
-}
 .section-container {
 	display: flex;
 	flex-flow: column;
@@ -101,14 +61,6 @@ a {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-}
-.button {
-	width: 100%;
-  max-width: 200px;
-  height: 50px;
-  font-size: 1.5rem;
-  font-weight: 550;
-  letter-spacing: 1.5px;
 }
 .header-container {
   position: sticky;
@@ -203,59 +155,6 @@ a {
 	background: white;
 	border-radius: 50%;
 	box-shadow: 1px 1px 5px black;
-}
-.technology {
-	width: 40px;
-	height: 40px;
-}
-.html {
-	background: url('./assets/icons/html.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.css {
-	background: url('./assets/icons/css.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.tailwindcss {
-	background: url('./assets/icons/tailwindcss.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.js {
-	background: url('./assets/icons/js.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.react {
-	background: url('./assets/icons/react.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.redux {
-	background: url('./assets/icons/redux.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.nextjs {
-	background: url('./assets/icons/nextjs.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.git {
-	background: url('./assets/icons/git.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.contact-icons {
-	width: 25px;
-	height: 25px;
-	transition: all .3s;
-}
-.linkedin--icon {
-	background: url('./assets/icons/linkedin.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.github--icon {
-	background: url('./assets/icons/github.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.whatsapp--icon {
-	background: url('./assets/icons/whatsapp.svg') no-repeat;
-	background-size: 100% 100%;
 }
 .about-me-content {
 	text-align: justify;
@@ -375,36 +274,8 @@ a {
 	color: var(--neutral-light);
 	letter-spacing: 1.5px;
 }
-.line {
-	width: 100%;
-	margin: 15px 0;
-	background: var(--neutral-dark);
-	filter: opacity(10%)
-}
 .gabriel-carron-title {
 	font-size: 1rem;
-}
-.section-title::before {
-	justify-self: center;
-	content: '';
-	position: absolute;
-	bottom: 0;
-	width: 70%;
-	height: 1px;
-	background: var(--primary-blue);
-}
-.nav-item-focus::before {
-	animation: nav_item_focus .3s ease forwards;
-}
-.nav-item-focus::before {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: -200px;
-	width: 100%;
-	height: 1px;
-	background: var(--primary-blue);
-	transition: .2s ease all;
 }
 @media (min-width: 1024px) {
 	.profile-info {
@@ -435,56 +306,4 @@ a {
 		width: 48px;
 		height: 48px;
 	}
-}
-@keyframes nav_item_focus {
-	from {opacity: 0; left: -200px;}
-	to {opacity: 1; left: 0;}
-}
-
-
-.icons {
-	width: 32px;
-	height: 32px;
-}
-.gesprender-icon {
-	width: 24px;
-	height: 24px;
-	background: url("./assets/gesprender.png") no-repeat;
-	background-size: 100% 100%;
-}
-.freelance-icon {
-	width: 24px;
-	height: 24px;
-	background: url("./assets/icons/freelance.svg") no-repeat;
-	background-size: 100% 100%;
-}
-.css-icon {
-	background: url('./assets/icons/css.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.tailwind-icon {
-	background: url('./assets/icons/tailwindcss.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.react-icon {
-	background: url('./assets/icons/react.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.redux-icon {
-	background: url('./assets/icons/redux.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.next-icon {
-	background: url('./assets/icons/nextjs.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.git-icon {
-	background: url('./assets/icons/git.svg') no-repeat;
-	background-size: 100% 100%;
-}
-.web-icon-light {
-	width: 24px;
-	height: 24px;
-	background: url('./assets/icons/web-light.svg') no-repeat;
-	background-size: 100% 100%;
 }
