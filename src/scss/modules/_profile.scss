@@ -1,0 +1,64 @@
+.profile-card {
+	display: grid;
+	justify-items: center;
+	width: 100%;
+	height: max-content;
+}
+.profile-img {
+	width: 200px;
+	height: 200px;
+	background: url('./assets/profile-img.jpg') no-repeat;
+	background-size: cover;
+	background-position: top left;
+	border: 4px solid var(--neutral-dark);
+	border-radius: 50%;
+	opacity: 1;
+}
+.profile-info {
+	align-self: start;
+	display: flex;
+	flex-flow: column wrap;
+	row-gap: 30px;
+	margin-inline: auto;
+	font-weight: bold;
+	text-align: center;
+}
+.profile-name {
+	font-size: 2.5rem;
+}
+.profile-role {
+	font-size: 1.1rem;
+	letter-spacing: 1.5px;
+}
+.contact-container {
+	display: flex;
+	flex-flow: column;
+	row-gap: 30px;
+	align-items: center;
+}
+.contact-icons-container {
+	display: flex;
+	column-gap: 20px;
+}
+.icon-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45px;
+	height: 45px;
+	background: hsl(0, 0%, 99%);
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 1px 5px var(--neutral-dark);
+}
+@media (min-width: 1024px) {
+	.profile-info {
+		align-self: center;
+	}
+	.profile-name {
+		font-size: 3rem;
+	}
+	.profile-role {
+		font-size: 1.3rem;
+	}
+}

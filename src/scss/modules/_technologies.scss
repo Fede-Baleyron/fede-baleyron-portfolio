@@ -1,0 +1,39 @@
+.technologies-section-container {
+	gap: 4rem;
+}
+.technologies-icons-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(35px, 70px));
+	justify-content: space-around;
+	gap: 5rem;
+	width: 100%;
+	max-width: 500px;
+}
+.technology-icon-wrapper {
+	position: relative;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	background: white;
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px black;
+}
+.technology-name {
+	justify-self: center;
+	position: absolute;
+	top: -25px;
+	width: max-content;
+	height: max-content;
+	color: var(--neutral-dark);
+	font-weight: bold;
+}
+@media (min-width: 850px) {
+	.technologies-icons-wrapper {
+		column-gap: 50px;
+	}
+	.technology-icon {
+		width: 48px;
+		height: 48px;
+	}
+}
